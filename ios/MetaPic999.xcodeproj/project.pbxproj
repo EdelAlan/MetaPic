@@ -37,6 +37,7 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		83321D9149864368A7E5A11A /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6C93DBC17446E8B7BB7598 /* libRNImagePicker.a */; };
+		E7CF76DD1F2F203C00C8172F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7CF76DC1F2F203C00C8172F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -252,6 +253,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E7CF767B1F2F0BEE00C8172F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CF76A41F2F0C2100C8172F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -279,6 +301,9 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		E7CF767D1F2F0BEE00C8172F /* libMetaPic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMetaPic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CF76A61F2F0C2100C8172F /* libExifTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExifTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7CF76DC1F2F203C00C8172F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +350,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CF767A1F2F0BEE00C8172F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CF76A31F2F0C2100C8172F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,6 +460,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				E7CF76DC1F2F203C00C8172F /* GoogleService-Info.plist */,
 			);
 			name = MetaPic999;
 			sourceTree = "<group>";
@@ -507,6 +547,8 @@
 				00E356EE1AD99517003FC87E /* MetaPic999Tests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* MetaPic999-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* MetaPic999-tvOSTests.xctest */,
+				E7CF767D1F2F0BEE00C8172F /* libMetaPic.a */,
+				E7CF76A61F2F0C2100C8172F /* libExifTool.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -594,6 +636,40 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* MetaPic999-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E7CF767C1F2F0BEE00C8172F /* MetaPic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CF76A11F2F0BEE00C8172F /* Build configuration list for PBXNativeTarget "MetaPic" */;
+			buildPhases = (
+				E7CF76791F2F0BEE00C8172F /* Sources */,
+				E7CF767A1F2F0BEE00C8172F /* Frameworks */,
+				E7CF767B1F2F0BEE00C8172F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetaPic;
+			productName = MetaPic;
+			productReference = E7CF767D1F2F0BEE00C8172F /* libMetaPic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7CF76A51F2F0C2100C8172F /* ExifTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7CF76AC1F2F0C2100C8172F /* Build configuration list for PBXNativeTarget "ExifTool" */;
+			buildPhases = (
+				E7CF76A21F2F0C2100C8172F /* Sources */,
+				E7CF76A31F2F0C2100C8172F /* Frameworks */,
+				E7CF76A41F2F0C2100C8172F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExifTool;
+			productName = ExifTool;
+			productReference = E7CF76A61F2F0C2100C8172F /* libExifTool.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -620,6 +696,16 @@
 						DevelopmentTeam = R4MUBVDF9V;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					E7CF767C1F2F0BEE00C8172F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R4MUBVDF9V;
+						ProvisioningStyle = Automatic;
+					};
+					E7CF76A51F2F0C2100C8172F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R4MUBVDF9V;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -690,6 +776,8 @@
 				00E356ED1AD99517003FC87E /* MetaPic999Tests */,
 				2D02E47A1E0B4A5D006451C7 /* MetaPic999-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* MetaPic999-tvOSTests */,
+				E7CF767C1F2F0BEE00C8172F /* MetaPic */,
+				E7CF76A51F2F0C2100C8172F /* ExifTool */,
 			);
 		};
 /* End PBXProject section */
@@ -907,6 +995,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				E7CF76DD1F2F203C00C8172F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -990,6 +1079,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DCD954D1E0B4F2C00145EB5 /* MetaPic999Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CF76791F2F0BEE00C8172F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7CF76A21F2F0C2100C8172F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1319,6 +1422,82 @@
 			};
 			name = Release;
 		};
+		E7CF76831F2F0BEE00C8172F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R4MUBVDF9V;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E7CF76841F2F0BEE00C8172F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R4MUBVDF9V;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E7CF76AD1F2F0C2100C8172F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = R4MUBVDF9V;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E7CF76AE1F2F0C2100C8172F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = R4MUBVDF9V;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1363,6 +1542,24 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CF76A11F2F0BEE00C8172F /* Build configuration list for PBXNativeTarget "MetaPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CF76831F2F0BEE00C8172F /* Debug */,
+				E7CF76841F2F0BEE00C8172F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7CF76AC1F2F0C2100C8172F /* Build configuration list for PBXNativeTarget "ExifTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7CF76AD1F2F0C2100C8172F /* Debug */,
+				E7CF76AE1F2F0C2100C8172F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

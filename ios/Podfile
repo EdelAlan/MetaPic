@@ -1,0 +1,59 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ExifTool' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for ExifTool
+
+end
+
+target 'MetaPic' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MetaPic
+
+  target 'MetaPic999-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MetaPic999Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'MetaPic999' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MetaPic999
+
+  target 'MetaPic999-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MetaPic999Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'MetaPic999-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MetaPic999-tvOS
+
+  target 'MetaPic999-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

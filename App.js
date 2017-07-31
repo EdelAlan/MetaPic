@@ -9,6 +9,7 @@ import {
   Image,
   ScrollView,
 } from 'react-native';
+import TabNavigator from 'react-native-tab-navigator';
 import ImagePicker from 'react-native-image-picker';
 
 export default class App extends React.Component {
@@ -54,6 +55,7 @@ export default class App extends React.Component {
 
         // let source = { uri: 'data:image/jpeg;base64,' + response.data };
 
+
         this.setState({
           picture: source,
           pictureSource: response.uri,
@@ -71,33 +73,51 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-        <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)} style={styles.contentContainer} >
-          <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}, {marginTop: 20}]}>
-          { this.state.pictureSource === null ? <Text>Select a Photo</Text> :
-            <Image style={styles.avatar} source={this.state.picture} />
-          }
-          </View>
-        </TouchableOpacity>
+      <TabNavigator>
+        <TabNavigator.Item
+          selected={this.state.selectedTab === 'home'}
+          title="Home"
+          onPress={() => this.setState({ selectedTab: 'home' })}>
+          <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+            <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)} style={styles.contentContainer} >
+              <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}, {marginTop: 20}]}>
+              { this.state.pictureSource === null ? <Text>Select a Photo</Text> :
+                <Image style={styles.avatar} source={this.state.picture} />
+              }
+              </View>
+            </TouchableOpacity>
 
-        { this.state.picture &&
-          <Text style={{margin: 8, textAlign: 'center'}} selectable={true}>
-            URI – {this.state.pictureSource}{'\n'}
-            {'\n'}
-            WIDTH – {this.state.widthSource}p{'\n'}
-            {'\n'}
-            HEIGHT – {this.state.heightSource}p{'\n'}
-            {'\n'}
-            FILE SIZE – {this.state.fileSizeSource} bytes{'\n'}
-            {'\n'}
-            LATITUDE – {this.state.latitudeSource}{'\n'}
-            {'\n'}
-            LONGITUDE – {this.state.longitudeSource}{'\n'}
-            {'\n'}
-            TIMESTAMP – {this.state.timestampSource}
-          </Text>
-        }
-      </ScrollView>
+            { this.state.picture &&
+              <Text style={{margin: 8, textAlign: 'center'}} selectable={true}>
+                URI – {this.state.pictureSource}{'\n'}
+                {'\n'}
+                WIDTH – {this.state.widthSource}p{'\n'}
+                {'\n'}
+                HEIGHT – {this.state.heightSource}p{'\n'}
+                {'\n'}
+                FILE SIZE – {this.state.fileSizeSource} bytes{'\n'}
+                {'\n'}
+                LATITUDE – {this.state.latitudeSource}{'\n'}
+                {'\n'}
+                LONGITUDE – {this.state.longitudeSource}{'\n'}
+                {'\n'}
+                TIMESTAMP – {this.state.timestampSource}
+              </Text>
+            }
+          </ScrollView>
+        </TabNavigator.Item>
+        <TabNavigator.Item
+          selected={this.state.selectedTab === 'profile'}
+          title="Profile"
+          onPress={() => this.setState({ selectedTab: 'profile' })}>
+
+          <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+
+          </ScrollView>
+
+        </TabNavigator.Item>
+      </TabNavigator>
+
     );
   }
 
